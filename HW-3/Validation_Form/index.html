@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+</head>
+<body>
+        <div>
+            <form>
+                <label>Email</label>
+                <input type="text" id="email" required>
+                <small id="e_Error"></small>
+
+                <br><br>
+
+                <label>Password</label>
+                <input type="password" id="password" minlength="8" required="true">
+                <small id="p_Error"></small>
+
+                <br><br>
+            </form>
+            <button type="submit" id="btn">
+                Login
+            </button>
+        </div>
+
+        <script src="index.js"></script>
+</body>
+</html>
