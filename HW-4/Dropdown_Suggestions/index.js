@@ -31,7 +31,6 @@ S_btn.textContent = "Search";
 S_btn.style.marginLeft = "3px";
 a_btn.style.marginRight = "5px";
 
-// FIX 1: Corrected camelCase spelling to 'searchWrapper'
 searchWrapper.appendChild(Search);
 searchWrapper.appendChild(dropdown);
 
@@ -72,8 +71,8 @@ Search.addEventListener("input", function() {
                     render([item]);    
                 };
                 dropdown.appendChild(li);
-            }); // FIX 3: Added missing closing bracket/parenthesis for forEach
-        } // FIX 3: Added missing closing brace for if block
+            }); 
+        } 
     }, 300);
 });
 
@@ -84,7 +83,7 @@ document.addEventListener("click", function(e) {
 });
 
 function render(list) {
-    // FIX 1: Corrected spelling to 'searchWrapper'
+    
     if (item_Arr.length > 0) { 
         a_btn.after(S_btn);
         a_btn.after(searchWrapper);
