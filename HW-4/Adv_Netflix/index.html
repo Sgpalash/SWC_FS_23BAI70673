@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Advanced Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="profile-screen" class="d-flex flex-column justify-content-center align-items-center vh-100 bg-dark text-white">
+        <h1 class="mb-4 fw-bold">Who's watching?</h1>
+        <div class="d-flex gap-4">
+            <div class="profile-card text-center" >
+                <img src="https://picsum.photos/150/150?random=11" alt="Profile 1" class="rounded mb-2">
+                <h5 class="text-secondary">Guest</h5>
+            </div>
+            <div class="profile-card text-center">
+                <img src="https://picsum.photos/150/150?random=12" alt="Profile 2" class="rounded mb-2">
+                <h5 class="text-secondary">Kids</h5>
+            </div>
+        </div>
+        <button class="btn btn-outline-secondary mt-5 px-4 py-1">Manage Profiles</button>
+    </div>
+
+    <div id="main-app" style="display: none;">
+        
+        <nav class="navbar navbar-expand-lg fixed-top px-4 top-nav" data-bs-theme="dark">
+            <div class="container-fluid">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" width="100" class="me-4 logo">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero-banner d-flex align-items-center">
+            <div class="hero-overlay"></div>
+            <div class="container-fluid px-5 hero-content">
+                <h1 class="display-1 fw-bold text-white mb-3">STRANGER<br>THINGS</h1>
+                <p class="lead text-white col-md-6 col-lg-4 mb-4 d-none d-md-block">
+                    When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.
+                </p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-light btn-lg px-4 py-2 fw-bold">▶ Play</button>
+                    <button class="btn btn-secondary btn-lg px-4 py-2 fw-bold text-white bg-opacity-50">ⓘ More Info</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-rows pb-5">
+            <div class="category-row mb-4">
+                <h5 class="text-white px-md-5 px-3 mb-2 fw-semibold">Trending Now</h5>
+                <div class="movie-slider px-md-5 px-3">
+                    
+                    <div class="movie-card interactive-card">
+                        <img src="https://picsum.photos/400/225?random=1" alt="Movie Thumbnail">
+                        <video loop muted playsinline class="trailer-video">
+                            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="movie-card interactive-card">
+                        <img src="https://picsum.photos/400/225?random=2" alt="Movie Thumbnail">
+                        <video loop muted playsinline class="trailer-video">
+                            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <div class="movie-card"><img src="https://picsum.photos/400/225?random=3" alt="Movie"></div>
+                    <div class="movie-card"><img src="https://picsum.photos/400/225?random=4" alt="Movie"></div>
+                    <div class="movie-card"><img src="https://picsum.photos/400/225?random=5" alt="Movie"></div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="mobile-bottom-nav">
+            <div class="nav-item active"><i class="fas fa-home"></i><span>Home</span></div>
+            <div class="nav-item"><i class="fas fa-search"></i><span>Search</span></div>
+            <div class="nav-item"><i class="fas fa-download"></i><span>Downloads</span></div>
+            <div class="nav-item"><i class="fas fa-bars"></i><span>Menu</span></div>
+        </nav>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

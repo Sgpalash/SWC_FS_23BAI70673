@@ -1,0 +1,68 @@
+body {
+    background-color: #141414;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 10%, rgba(0,0,0,0));
+    transition: background-color 0.4s ease;
+}
+
+.hero-banner {
+    height: 85vh;
+    background-image: url('https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%),
+                linear-gradient(to top, #141414 0%, rgba(0,0,0,0) 20%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.movie-slider {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    padding: 20px 3rem;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.movie-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-card {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.movie-card:hover {
+    transform: scale(1.08);
+    z-index: 10;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zomato-inspired restaurant discovery landing page">
+  <title>Zomato - Discover the best food near you</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Zomato home">zomato</a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Toggle navigation">
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <div class="nav-links">
+        <a href="#restaurants">Restaurants</a>
+        <a href="#collections">Collections</a>
+        <a href="#app">Get the app</a>
+        <a href="#" class="nav-login">Log in</a>
+        <a href="#" class="nav-signup">Sign up</a>
+      </div>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="eyebrow"><span></span> India&apos;s most loved food app</p>
+      <h1>Discover the best food &amp; drinks in your city</h1>
+      <p class="hero-copy">From your neighborhood favorites to hidden gems, your next delicious meal is just a search away.</p>
+
+      <form class="search-bar" action="#" role="search">
+        <label class="location-field" for="location">
+          <span class="pin-icon" aria-hidden="true"></span>
+          <span class="field-content">
+            <span class="field-label">Your location</span>
+            <input id="location" type="text" value="Mumbai, India" aria-label="Your location">
+          </span>
+        </label>
+        <span class="search-divider" aria-hidden="true"></span>
+        <label class="restaurant-field" for="restaurant-search">
+          <span class="magnifier" aria-hidden="true"></span>
+          <input id="restaurant-search" type="search" placeholder="Search for restaurant, cuisine or a dish">
+        </label>
+        <button type="submit">Find Food</button>
+      </form>
+
+      <div class="quick-search" aria-label="Popular searches">
+        <span>Popular:</span>
+        <a href="#">Biryani</a>
+        <a href="#">Pizza</a>
+        <a href="#">North Indian</a>
+        <a href="#">Desserts</a>
+      </div>
+    </div>
+
+    <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="service-section container" aria-labelledby="service-title">
+      <div class="section-heading center-heading">
+        <p class="section-kicker">What are you craving?</p>
+        <h2 id="service-title">Food for every mood</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-visual delivery-visual">
+            <span class="service-emoji" aria-hidden="true">🍜</span>
+            <span class="time-chip">30 min</span>
+          </div>
+          <div class="service-content">
+            <span class="service-number">01</span>
+            <div>
+              <h3>Order Online</h3>
+              <p>Stay home and order to your doorstep.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-visual dining-visual">
+            <span class="service-emoji" aria-hidden="true">🍽️</span>
+            <span class="time-chip">Explore</span>
+          </div>
+          <div class="service-content">
+            <span class="service-number">02</span>
+            <div>
+              <h3>Dining Out</h3>
+              <p>Discover the city&apos;s finest dining spots.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-visual nightlife-visual">
+            <span class="service-emoji" aria-hidden="true">🍹</span>
+            <span class="time-chip">Tonight</span>
+          </div>
+          <div class="service-content">
+            <span class="service-number">03</span>
+            <div>
+              <h3>Nightlife</h3>
+              <p>Explore the city&apos;s most exciting nightlife.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="restaurant-section" id="restaurants">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="section-kicker">Handpicked for you</p>
+            <h2>Popular restaurants nearby</h2>
+          </div>
+          <a class="view-all" href="#">View all restaurants <span>→</span></a>
+        </div>
+
+        <div class="restaurant-grid">
+          <article class="restaurant-card">
+            <div class="restaurant-image image-pizza">
+              <span class="discount">50% OFF</span>
+              <button class="favorite" type="button" aria-label="Add The Red Oven to favorites">♡</button>
+              <span class="delivery-time">25 min</span>
+            </div>
+            <div class="restaurant-info">
+              <div class="restaurant-title">
+                <h3>The Red Oven</h3>
+                <span class="rating">4.8 ★</span>
+              </div>
+              <p>Italian, Pizza, Continental</p>
+              <div class="restaurant-meta">
+                <span>₹600 for two</span>
+                <span class="dot"></span>
+                <span>1.2 km</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <div class="restaurant-image image-bowl">
+              <span class="discount">FREE DELIVERY</span>
+              <button class="favorite" type="button" aria-label="Add Curry House to favorites">♡</button>
+              <span class="delivery-time">35 min</span>
+            </div>
+            <div class="restaurant-info">
+              <div class="restaurant-title">
+                <h3>Curry House</h3>
+                <span class="rating">4.6 ★</span>
+              </div>
+              <p>North Indian, Mughlai, Biryani</p>
+              <div class="restaurant-meta">
+                <span>₹450 for two</span>
+                <span class="dot"></span>
+                <span>2.4 km</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="restaurant-card">
+            <div class="restaurant-image image-burger">
+              <span class="discount">20% OFF</span>
+              <button class="favorite" type="button" aria-label="Add Burger District to favorites">♡</button>
+              <span class="delivery-time">20 min</span>
+            </div>
+            <div class="restaurant-info">
+              <div class="restaurant-title">
+                <h3>Burger District</h3>
+                <span class="rating">4.5 ★</span>
+              </div>
+              <p>Burgers, American, Beverages</p>
+              <div class="restaurant-meta">
+                <span>₹350 for two</span>
+                <span class="dot"></span>
+                <span>0.8 km</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections-section container" id="collections">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="section-kicker">Curated experiences</p>
+          <h2>Explore our collections</h2>
+          <p class="section-description">Discover places based on what you&apos;re in the mood for.</p>
+        </div>
+        <a class="view-all" href="#">All collections <span>→</span></a>
+      </div>
+
+      <div class="collection-grid">
+        <a class="collection-card collection-rooftop" href="#">
+          <span class="collection-tag">8 Places</span>
+          <span class="collection-content">
+            <strong>Romantic Rooftops</strong>
+            <span>City views &amp; candlelight →</span>
+          </span>
+        </a>
+        <a class="collection-card collection-brunch" href="#">
+          <span class="collection-tag">14 Places</span>
+          <span class="collection-content">
+            <strong>Brilliant Brunches</strong>
+            <span>Slow mornings done right →</span>
+          </span>
+        </a>
+        <a class="collection-card collection-local" href="#">
+          <span class="collection-tag">21 Places</span>
+          <span class="collection-content">
+            <strong>Legendary Local Eats</strong>
+            <span>Flavors that define the city →</span>
+          </span>
+        </a>
+        <a class="collection-card collection-dessert" href="#">
+          <span class="collection-tag">11 Places</span>
+          <span class="collection-content">
+            <strong>Sweet Tooth</strong>
+            <span>Desserts worth saving room for →</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="app-section" id="app">
+      <div class="container app-container">
+        <div class="phone-mockup" aria-hidden="true">
+          <div class="phone-screen">
+            <div class="phone-header">
+              <span class="phone-logo">zomato</span>
+              <span>•••</span>
+            </div>
+            <p>Good evening!</p>
+            <strong>What would you like to eat?</strong>
+            <div class="phone-search">⌕ Search food &amp; restaurants</div>
+            <div class="phone-food-row">
+              <span>🍕</span>
+              <span>🍜</span>
+              <span>🍔</span>
+            </div>
+            <div class="phone-card"></div>
+            <div class="phone-nav">⌂ &nbsp;&nbsp; ◇ &nbsp;&nbsp; ♡ &nbsp;&nbsp; ○</div>
+          </div>
+        </div>
+
+        <div class="app-copy">
+          <p class="section-kicker light-kicker">Food, faster</p>
+          <h2>Everything you love,<br>right in your pocket.</h2>
+          <p>Get personalized recommendations, exclusive offers, live order tracking, and much more with the Zomato app.</p>
+
+          <form class="app-form" action="#">
+            <div class="radio-row">
+              <label><input type="radio" name="contact" checked> Email</label>
+              <label><input type="radio" name="contact"> Phone</label>
+            </div>
+            <div class="app-input-row">
+              <input type="email" placeholder="Enter your email address" aria-label="Email address">
+              <button type="submit">Get App Link</button>
+            </div>
+          </form>
+
+          <p class="download-label">Download the app from</p>
+          <div class="store-row">
+            <a class="store-button" href="#">
+              <span class="store-icon" aria-hidden="true">A</span>
+              <span><small>Download on the</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-button" href="#">
+              <span class="play-icon" aria-hidden="true">▶</span>
+              <span><small>GET IT ON</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-top">
+      <a class="footer-logo" href="#home">zomato</a>
+      <div class="footer-selectors">
+        <button type="button">🇮🇳 India ▾</button>
+        <button type="button">◉ English ▾</button>
+      </div>
+    </div>
+
+    <div class="container footer-grid">
+      <div>
+        <h3>ABOUT ZOMATO</h3>
+        <a href="#">Who We Are</a>
+        <a href="#">Blog</a>
+        <a href="#">Work With Us</a>
+        <a href="#">Investor Relations</a>
+      </div>
+      <div>
+        <h3>ZOMAVERSE</h3>
+        <a href="#">Zomato</a>
+        <a href="#">Blinkit</a>
+        <a href="#">Feeding India</a>
+        <a href="#">Hyperpure</a>
+      </div>
+      <div>
+        <h3>FOR RESTAURANTS</h3>
+        <a href="#">Partner With Us</a>
+        <a href="#">Apps For You</a>
+        <a href="#">Restaurant Support</a>
+      </div>
+      <div>
+        <h3>LEARN MORE</h3>
+        <a href="#">Privacy</a>
+        <a href="#">Security</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+      <div>
+        <h3>SOCIAL LINKS</h3>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">x</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies.</p>
+      <p>© 2026 Zomato-inspired concept. Frontend design demo.</p>
+    </div>
+  </footer>
+</body>
+</html>
