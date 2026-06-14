@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Select and preview a profile photo before uploading it.">
+    <title>Profile Photo Upload</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="page">
+        <section class="upload-card" aria-labelledby="uploadTitle">
+            <div class="card-heading">
+                <p class="eyebrow">Profile settings</p>
+                <h1 id="uploadTitle">Update your photo</h1>
+                <p>Choose an image to preview before uploading.</p>
+            </div>
+
+            <form id="uploadForm" novalidate>
+                <input
+                    class="visually-hidden"
+                    type="file"
+                    id="fileInput"
+                    name="profilePhoto"
+                    accept="image/*"
+                    aria-describedby="fileHelp statusMessage"
+                >
+
+                <button
+                    class="preview"
+                    id="previewButton"
+                    type="button"
+                    aria-label="Choose a profile photo"
+                >
+                    <img id="previewImage" alt="Selected profile photo preview">
+
+                    <span class="placeholder" id="placeholder">
+                        <span class="camera-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="img">
+                                <path d="M9 4.5 7.6 6H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-2.6L15 4.5H9ZM12 17a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm0-2a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                            </svg>
+                        </span>
+                        <strong>Add photo</strong>
+                        <small>Click or drop an image</small>
+                    </span>
+
+                    <span class="edit-badge" id="editBadge" aria-hidden="true">Change</span>
+                </button>
+
+                <p class="file-help" id="fileHelp">Images only, up to 2 MB.</p>
+                <p class="status-message" id="statusMessage" role="status" aria-live="polite"></p>
+
+                <div class="actions">
+                    <button class="primary-button" id="uploadButton" type="submit" disabled>
+                        Upload photo
+                    </button>
+                    <button class="secondary-button" id="removeButton" type="button" hidden>
+                        Remove
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
